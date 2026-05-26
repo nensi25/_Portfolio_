@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nensi Gohel | Engineering Ideas Into Reality</title>
+    <meta name="description"
+        content="Portfolio of Gohel Nensi Sanjaybhai, a Computer Engineering student specializing in AI Systems and Drone Design.">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Poppins:wght@300;400;600;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <!-- Custom Cursor -->
+    <div class="cursor-glow"></div>
+
+    <!-- Loading Screen -->
+    <div id="loader" class="loader-wrapper">
+        <div class="loader-content">
+            <div class="loader-circle"></div>
+            <span class="loader-text">NENSI S GOHEL</span>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scrollBar"></div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">NENSI<span>.</span></a>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-strip">Contact</a></li>
+            </ul>
+            <div class="nav-social">
+                <a href="https://www.linkedin.com/in/nensi-gohel-765935328/" target="_blank" title="Visit LinkedIn"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/nensi25" target="_blank" title="View GitHub"><i
+                        class="fab fa-github"></i></a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background">
+            <canvas id="techGrid"></canvas>
+        </div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h2 class="reveal-text">Engineering Ideas Into Reality</h2>
+                <h1 class="glitch-text" data-text="Gohel Nensi">Gohel Nensi</h1>
+                <p class="hero-subtext">Computer Engineering Student | <span id="typing-text"></span></p>
+                <div class="hero-btns">
+                    <a href="#projects" class="btn btn-primary">View Projects</a>
+                    <a href="#contact-strip" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-visual animate-on-scroll" data-animation="fade-left">
+                <div class="hero-visual-container">
+                    <div class="glowing-orb"></div>
+                    <div class="orb-ring"></div>
+                    <div class="orb-ring"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section-padding">
+        <div class="container">
+            <div class="section-header center">
+                <span class="subtitle">Discovery</span>
+                <h2>About Me</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="about-grid">
+                <div class="about-img-wrapper animate-on-scroll" data-animation="fade-right">
+                    <div class="profile-glow"></div>
+                    <img src="https://images.unsplash.com/photo-1581092160562-40aa08e78837?q=80&w=600&auto=format&fit=crop"
+                        alt="Nensi Gohel" class="profile-img">
+                </div>
+                <div class="about-content animate-on-scroll" data-animation="fade-left">
+                    <h3>Innovating the Future of Tech</h3>
+                    <p>I am Gohel Nensi Sanjaybhai, a passionate Computer Engineering student at Gujarat Technological
+                        University (GTU), graduating in 2028. My journey is driven by a deep curiosity about how
+                        technology can solve real-world problems.</p>
+                    <p>With a core focus on <strong>innovative problem-solving</strong> and <strong>AI Systems</strong>,
+                        I blend
+                        engineering precision with creative design thinking to build systems that matter.</p>
+                    <div class="about-info">
+                        <div class="info-item">
+                            <span class="label">Education</span>
+                            <span class="value">B.Tech Computer Engineering</span>
+                        </div>
+                        <div class="info-item">
+                            <span class="label">Location</span>
+                            <span class="value">Rajkot, Gujarat</span>
+                        </div>
+                    </div>
+                    <div class="interests">
+                        <div class="interest-tag"><i class="fas fa-microchip"></i> AI Systems</div>
+                        <div class="interest-tag"><i class="fas fa-paper-plane"></i> Frontend Systems</div>
+                        <div class="interest-tag"><i class="fas fa-pencil-ruler"></i> Design Thinking</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section-padding">
+        <div class="container">
+            <div class="section-header center">
+                <span class="subtitle">Expertise</span>
+                <h2>Technical Arsenal</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-card animate-on-scroll" data-animation="fade-up">
+                    <div class="skill-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4>Core Programming</h4>
+                    <p>Foundation of logic and low-level engineering with high-performance execution.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">C Programming</span>
+                        <span class="skill-tag">Data Structures</span>
+                        <span class="skill-tag">Algorithms</span>
+                    </div>
+                </div>
+                <div class="skill-card animate-on-scroll" data-animation="fade-up" data-delay="100">
+                    <div class="skill-icon">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <h4>Web Systems</h4>
+                    <p>Crafting modern, responsive web experiences and complex frontend architectures.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">HTML/CSS</span>
+                        <span class="skill-tag">JavaScript</span>
+                        <span class="skill-tag">UI Design</span>
+                    </div>
+                </div>
+                <div class="skill-card animate-on-scroll" data-animation="fade-up" data-delay="200">
+                    <div class="skill-icon">
+                        <i class="fas fa-lightbulb"></i>
+                    </div>
+                    <h4>Innovation</h4>
+                    <p>Human-centered approach to problem-solving and rapid prototyping of ideas.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Design Thinking</span>
+                        <span class="skill-tag">Prototyping</span>
+                        <span class="skill-tag">Research</span>
+                    </div>
+                </div>
+                <div class="skill-card animate-on-scroll" data-animation="fade-up" data-delay="300">
+                    <div class="skill-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h4>Complex Solvers</h4>
+                    <p>Algorithmic thinking and systematic debugging for high-level technical challenges.</p>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">AI logic</span>
+                        <span class="skill-tag">Debugging</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section-padding">
+        <div class="container">
+            <div class="section-header center">
+                <span class="subtitle">Innovation</span>
+                <h2>Featured Projects <i class="fab fa-github"
+                        style="font-size: 0.8em; margin-left: 10px; opacity: 0.6;"></i></h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1: AI Waste Classifier -->
+                <div class="project-card animate-on-scroll" data-animation="fade-up">
+                    <div class="project-img">
+                        <img src="assets/ai-waste-classifier.jpg" alt="AI Waste Classifier">
+                        <div class="project-overlay">
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <a href="https://nensi25.github.io/ai-waste-classifier/" target="_blank"
+                                    class="view-btn">Live Demo <i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/nensi25/ai-waste-classifier" target="_blank"
+                                    class="view-btn">View Code <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">AI & Web App</span>
+                        <h3>AI Waste Classifier</h3>
+                        <p>An intelligent system powered by Google Gemini AI that classifies waste images into correct
+                            recycling categories to promote sustainability.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Flask</span>
+                            <span>Gemini AI</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project: Landing Page -->
+                <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="100">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1507238691740-187a5b1d37b8?q=80&w=800&auto=format&fit=crop"
+                            alt="Interactive Landing Page">
+                        <div class="project-overlay">
+                            <div style="display: flex; flex-direction: column; gap: 15px;">
+                                <a href="https://nensi25.github.io/landing-page-/" target="_blank" class="view-btn">Live
+                                    Demo <i class="fas fa-external-link-alt"></i></a>
+                                <a href="https://github.com/nensi25/landing-page-" target="_blank" class="view-btn">View
+                                    Code <i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Design</span>
+                        <h3>Interactive Landing Page</h3>
+                        <p>A sleek, responsive, and performance-optimized landing page designed with modern CSS layout
+                            patterns, fluid typography, and interactive components.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project: Drone-Based AI System -->
+                <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="200">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1508614589041-895b88991e3e?q=80&w=800&auto=format&fit=crop"
+                            alt="Drone Project">
+                        <div class="project-overlay">
+                            <a href="https://github.com/nensi25" target="_blank" class="view-btn">View Code <i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">AI & Robotics</span>
+                        <h3>Drone-Based AI System</h3>
+                        <p>Solved the challenge of autonomous navigation in GPS-denied environments using real-time
+                            computer vision and SLAM algorithms.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>AI</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project: Blog Platform -->
+                <!-- <div class="project-card animate-on-scroll" data-animation="fade-up" data-delay="300">
+                    <div class="project-img">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=800&auto=format&fit=crop"
+                            alt="Blog Platform">
+                        <div class="project-overlay">
+                            <a href="https://github.com/nensi25" target="_blank" class="view-btn">View Code <i
+                                    class="fab fa-github"></i></a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <span class="project-category">Web Platform</span>
+                        <h3>Blog Platform</h3>
+                        <p>Created a lightweight, SEO-optimized content delivery system for engineers to document
+                            technical findings without the overhead of heavy CMS.</p>
+                        <div class="project-tech">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JS</span> -->
+            </div>
+        </div>
+        </div>
+        </div>
+        </div>
+    </section>
+    <!-- Futuristic Showcase Section -->
+    <section id="creative-glimpses" class="futuristic-section section-padding">
+        <div class="container">
+            <div class="section-header center">
+                <span class="subtitle">RESEARCH & DESIGN</span>
+                <h2>Creative Glimpses</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="showcase-grid">
+                <!-- Card 1 -->
+                <div class="showcase-card animate-on-scroll" data-animation="fade-up">
+                    <div class="video-wrapper">
+                        <video autoplay muted loop playsinline class="showcase-video">
+                            <source src="videos/digital-parking.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3>Digital Parking Spot</h3>
+                    <p class="category">Design Thinking | Smart Parking | UX Research</p>
+                    <p class="description">A futuristic smart parking solution focused on improving urban mobility
+                        through AI-powered parking insights, reservation systems, empathy mapping, AEIOU analysis, and
+                        prototype-driven design.</p>
+                    <div class="tags">
+                        <span class="tag">AEIOU</span>
+                        <span class="tag">Empathy Mapping</span>
+                        <span class="tag">Prototype</span>
+                        <span class="tag">UX Research</span>
+                        <span class="tag">Smart Parking</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="Blue and White Simple The Future Of The Arctic Presentation.pdf" target="_blank"
+                            rel="noopener noreferrer" class="btn btn-primary"
+                            aria-label="Open Digital Parking Spot PDF">View PDF</a>
+                        <a href="#" class="btn btn-secondary">Case Study</a>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="showcase-card animate-on-scroll" data-animation="fade-up" data-delay="100">
+                    <div class="video-wrapper">
+                        <video autoplay muted loop playsinline class="showcase-video">
+                            <source src="videos/space-probes.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <h3>Space Probes Research</h3>
+                    <p class="category">Research | Space Technology | Innovation</p>
+                    <p class="description">A research presentation exploring space probes, interstellar missions,
+                        Chandrayaan-3, Voyager, Perseverance Rover, and future space technologies.</p>
+                    <div class="tags">
+                        <span class="tag">Space Research</span>
+                        <span class="tag">NASA</span>
+                        <span class="tag">ISRO</span>
+                        <span class="tag">Voyager</span>
+                        <span class="tag">Innovation</span>
+                    </div>
+                    <div class="card-buttons">
+                        <a href="#" class="btn btn-primary">View Presentation</a>
+                        <a href="#" class="btn btn-secondary">Research Slides</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience section-padding">
+        <div class="container">
+            <div class="section-header center">
+                <span class="subtitle">Milestones</span>
+                <h2>Experience & Activities</h2>
+                <div class="header-line"></div>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item animate-on-scroll" data-animation="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">2024 – 2028</span>
+                        <h4>B.Tech Computer Engineering</h4>
+                        <p>Pursuing degree at GTU, focusing on core engineering principles and emerging technologies.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll" data-animation="fade-right">
+                    <!-- <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">2024</span>
+                        <h4>Workshop on Drone Design</h4>
+                        <p>Intensive training on aerodynamics, flight controllers, and payload management.</p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll" data-animation="fade-left">
+                     <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">2024</span>
+                        <h4>Drone-Based AI Project</h4>
+                        <p>Academic research and development project integrating AI models into drone flight systems.
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item animate-on-scroll" data-animation="fade-right"> -->
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-card">
+                        <span class="date">Ongoing</span>
+                        <h4>Continuous Learning</h4>
+                        <p>Active exploration in programming, design thinking, and innovative tech solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section-padding">
+        <div class="container">
+            <div class="section-header center">
+                <span class="subtitle">Recognition</span>
+                <h2>ACHIEVEMENTS & CERTIFICATIONS</h2>
+                <div class="header-line"></div>
+                <p
+                    style="margin-top: 20px; opacity: 0.8; max-width: 600px; margin-left: auto; margin-right: auto; font-size: 1rem;">
+                    Milestones, competitions, workshops, and technical learning experiences that shaped my engineering
+                    journey.</p>
+            </div>
+            <div class="achievements-grid">
+                <!-- Card 1 -->
+                <div class="achievement-card animate-on-scroll" data-animation="fade-up">
+                    <div class="achievement-icon">
+                        <i class="fas fa-paper-plane"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Drone Design Workshop</h3>
+                        <p>Participated in a hands-on drone design and engineering workshop focused on UAV systems and
+                            innovation.</p>
+                        <div class="achievement-tags">
+                            <span class="tech-tag">Drone Tech</span>
+                            <span class="tech-tag">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 2 -->
+                <div class="achievement-card animate-on-scroll" data-animation="fade-up" data-delay="100">
+                    <div class="achievement-icon">
+                        <i class="fas fa-trophy"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>GTU Competition Participant</h3>
+                        <p>Presented innovative engineering ideas and technical projects in Gujarat Technological
+                            University competitions.</p>
+                        <div class="achievement-tags">
+                            <span class="tech-tag">Engineering</span>
+                            <span class="tech-tag">Innovation</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 3 -->
+                <div class="achievement-card animate-on-scroll" data-animation="fade-up" data-delay="200">
+                    <div class="achievement-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>AI Waste Classifier Project</h3>
+                        <p>Developed an AI-powered waste classification system for smarter and sustainable waste
+                            management.</p>
+                        <div class="achievement-tags">
+                            <span class="tech-tag">AI Systems</span>
+                            <span class="tech-tag">Programming</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Card 4 -->
+                <div class="achievement-card animate-on-scroll" data-animation="fade-up" data-delay="300">
+                    <div class="achievement-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>C Programming Certification</h3>
+                        <p>Completed foundational programming certification covering logic building, problem-solving,
+                            and algorithms.</p>
+                        <div class="achievement-tags">
+                            <span class="tech-tag">Programming</span>
+                            <span class="tech-tag">Algorithms</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery section-padding">
+        <div class="container">
+            <div class="section-header center">
+                <span class="subtitle">Gallery</span>
+                <h2>Creative Glimpses</h2>
+                <div class="header-line"></div>
+            </div>
+
+            <div class="gallery-container-new animate-on-scroll" data-animation="fade-up">
+                <!-- Main Image Viewport -->
+                <div class="gallery-viewport">
+                    <img id="mainGalleryImage" class="main-gallery-image" src="" alt="Creative Glimpses">
+
+                    <!-- Caption Overlay -->
+                    <div class="gallery-caption-overlay">
+                        <span class="gallery-counter" id="galleryCounter">1 / 4</span>
+                        <h3 id="galleryTitle" class="gallery-title">Digital Parking Spot</h3>
+                        <p id="galleryDesc" class="gallery-description">Smart parking solution focused on urban
+                            mobility, AI-powered parking insights, AEIOU analysis, empathy mapping, and prototype-driven
+                            design.</p>
+                        <div class="gallery-tags" id="galleryTags"></div>
+                        <div class="gallery-buttons" id="galleryButtons"></div>
+                    </div>
+
+                    <!-- Navigation Arrows -->
+                    <button class="gallery-nav-btn prev" id="galleryPrevBtn" aria-label="Previous image">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <button class="gallery-nav-btn next" id="galleryNextBtn" aria-label="Next image">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+
+                <!-- Thumbnails Container -->
+                <div class="gallery-thumbnails" id="galleryThumbnails">
+                    <div class="thumb-card active" data-index="0">
+                        <img src="https://images.unsplash.com/photo-1509395176047-4a66953fd231?q=80&w=150&auto=format&fit=crop"
+                            alt="Digital Parking Spot">
+                        <span class="thumb-title">Digital Parking Spot</span>
+                    </div>
+                    <div class="thumb-card" data-index="1">
+                        <img src="https://images.unsplash.com/photo-1526392060635-9d6019884377?q=80&w=150&auto=format&fit=crop"
+                            alt="Space Probes Research">
+                        <span class="thumb-title">Space Probes Research</span>
+                    </div>
+                    <div class="thumb-card" data-index="2">
+                        <img src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?q=80&w=150&auto=format&fit=crop"
+                            alt="Drone Design">
+                        <span class="thumb-title">Drone Design</span>
+                    </div>
+                    <div class="thumb-card" data-index="3">
+                        <img src="https://images.unsplash.com/photo-1558444458-201948831341?q=80&w=150&auto=format&fit=crop"
+                            alt="UI/UX Design">
+                        <span class="thumb-title">UI/UX Design</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Minimal Contact Strip -->
+    <section id="contact-strip" class="contact-strip">
+        <div class="container">
+            <div class="strip-content animate-on-scroll" data-animation="fade-up">
+                <a href="mailto:nensigohel25@gmail.com" class="strip-email">
+                    <i class="fas fa-envelope"></i> nensigohel25@gmail.com
+                </a>
+                <div class="strip-social">
+                    <a href="https://www.linkedin.com/in/nensi-gohel-765935328/" target="_blank"
+                        title="Visit LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/nensi25" target="_blank" title="View GitHub"><i
+                            class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h2 class="footer-name">NENSI</h2>
+                <div class="footer-contact">
+                    <p>nensigohel25@gmail.com</p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://www.linkedin.com/in/nensi-gohel-765935328/" target="_blank"
+                        title="Visit LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/nensi25" target="_blank" title="View GitHub"><i
+                            class="fab fa-github"></i></a>
+                </div>
+                <div class="footer-bottom animate-on-scroll" data-animation="fade-up">
+                    <p class="designer-text">Designed with passion by Nensi</p>
+                    <p class="copyright">&copy; 2024 Nensi Gohel. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Music Toggle -->
+    <div class="music-toggle" id="musicToggle">
+        <i class="fas fa-volume-mute"></i>
+    </div>
+    <audio id="bgMusic" loop>
+        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Custom JS -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
